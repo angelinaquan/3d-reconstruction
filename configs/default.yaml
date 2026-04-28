@@ -1,0 +1,31 @@
+data:
+  root: /data/scene-rep/u/aquan/cv/data
+  img_size: 224
+  voxel_size: 32
+  num_workers: 8
+
+model:
+  encoder: resnet18
+  pretrained: true
+  use_refiner: true
+
+train:
+  epochs: 150
+  batch_size: 32
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  scheduler: cosine
+  loss: bce
+  seed: 42
+
+eval:
+  threshold: 0.5
+  batch_size: 64
+
+wandb:
+  project: cv_project
+  entity: null
+
+checkpoint:
+  dir: /data/scene-rep/u/aquan/cv/checkpoints
+  save_every: 10
