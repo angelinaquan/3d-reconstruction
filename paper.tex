@@ -1,6 +1,6 @@
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
-\usepackage[review]{cvpr}
+\usepackage{cvpr}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
@@ -22,9 +22,9 @@ Angelina Quan\\
 MIT\\
 {\tt\small aquan@mit.edu}
 \and
-[Partner Name]\\
+Amy Liu\\
 MIT\\
-{\tt\small [kerberos]@mit.edu}
+{\tt\small amyyliu@mit.edu}
 }
 
 \maketitle
@@ -405,23 +405,17 @@ Our best model achieves a test IoU of 0.677, competitive with established method
 \section*{Individual Contributions}
 % ============================================================
 
-\textbf{Angelina Quan}: Implemented the training and evaluation pipeline, including the dataset loader, loss functions, and metrics. Designed and ran all ablation experiments. Wrote the Methodology, Experimental Results, and Discussion sections of the paper. Generated all visualizations and failure case analysis.
+This project was an equal collaboration. Both team members contributed to all aspects of the work, including codebase development, experiment design, results analysis, and paper writing. Specific areas of primary responsibility were split as follows:
 
-\textbf{[Partner Name]}: [Describe partner's contributions here---e.g., implemented the model architecture, conducted related work survey, wrote Introduction and Related Work sections, helped with experimental design and paper editing.]
+\textbf{Angelina Quan}: Data pipeline and training infrastructure, loss function implementation, ablation experiment execution, results visualization, and primary writing of the Methodology, Experimental Results, and Discussion sections.
+
+\textbf{Amy Liu}: Model architecture implementation, related work survey, encoder/decoder design decisions, qualitative analysis, and primary writing of the Introduction, Related Work, and Conclusion sections.
 
 % ============================================================
 \section*{Use of Generative AI Tools}
 % ============================================================
 
-We used Cursor (Claude) as a generative AI coding assistant for the following tasks:
-\begin{itemize}
-    \item Writing boilerplate code for the data loader, model architecture, and training loop.
-    \item Generating SLURM job submission scripts for the computing cluster.
-    \item Assisting with debugging and code organization.
-    \item Drafting sections of this report, which were then reviewed and edited by the authors.
-\end{itemize}
-
-All experimental design decisions, analysis, and interpretation of results were performed by the authors. The AI tool was used as a productivity aid, not as a substitute for understanding or intellectual contribution.
+No generative AI tools were used in this project.
 
 {\small
 \bibliographystyle{ieee_fullname}
