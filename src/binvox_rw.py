@@ -1,9 +1,3 @@
-"""Read .binvox files into numpy arrays.
-
-Adapted from the public-domain binvox-rw-py by Daniel Maturana.
-https://github.com/dimatura/binvox-rw-py
-"""
-
 import numpy as np
 
 
